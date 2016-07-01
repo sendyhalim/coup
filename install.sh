@@ -8,14 +8,22 @@ touch $HOME/.customrc
 # Clone dotfiles~
 mkdir -p $REPO_DIR
 cd $REPO_DIR
-rm -rf dotfiles
 git clone https://github.com/sendyhalim/dotfiles
 cd dotfiles
 rm ~/.zshrc
 ./create_ln.sh
 
+# Clone vimrc
+cd $REPO_DIR
+git clone https://github.com/sendyhalim/vimrc
+cd vimrc
+./create_ln.sh
+
 # Install spacemacs
 git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+
+# Install vim vundle
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
 # Install linuxbrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
