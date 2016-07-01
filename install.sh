@@ -14,6 +14,9 @@ cd dotfiles
 rm ~/.zshrc
 ./create_ln.sh
 
+# Install spacemacs
+git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+
 # Install linuxbrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
 
