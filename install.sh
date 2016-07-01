@@ -1,10 +1,19 @@
 # This script assumes that you're running zsh
 
+REPO_DIR=$HOME/repositories
+
 # Create .customrc which will be used for local customization
 touch $HOME/.customrc
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Clone dotfiles~
+mkdir -p $REPO_DIR
+cd $REPO_DIR
+rm -rf dotfiles
+git clone https://github.com/sendyhalim/dotfiles
+cd dotfiles
+rm ~/.zshrc
+./create_ln.sh
+
 # Install linuxbrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
 
@@ -12,5 +21,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master
 sudo apt-get install linuxbrew-wrapper
 
 # Install NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v-1.31.2/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+
 
