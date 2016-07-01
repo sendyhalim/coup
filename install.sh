@@ -23,4 +23,7 @@ sudo apt-get install linuxbrew-wrapper
 # Install NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 
-
+# Install powerline fonts, beauty at its best!
+git clone https://github.com/powerline/fonts powerline-fonts
+cd powerline-fonts 
+./install.sh
