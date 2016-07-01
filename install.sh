@@ -1,5 +1,10 @@
 # This script assumes that you're running zsh
 
+# Create .customrc which will be used for local customization
+touch $HOME/.customrc
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # Install linuxbrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
 

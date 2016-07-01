@@ -9,4 +9,3 @@ git clone https://github.com/sendyhalim/dotfiles
 cd dotfiles
 ./create_ln.sh
 
-
