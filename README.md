@@ -24,6 +24,17 @@ Install :tada:
 ./install.sh
 ```
 
+# Stuffs that this script setup
+
+- Install zsh + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- Vim
+- Emacs
+- [Spacemacs](https://github.com/syl20bnr/spacemacs)
+- My [dotfiles](https://github.com/sendyhalim/dotfiles)
+- Linux brew
+- [NVM](https://github.com/creationix/nvm)
+- [Powerline fonts](https://github.com/powerline/fonts)
+
 # License
 
 MIT ~
