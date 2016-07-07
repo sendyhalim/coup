@@ -36,5 +36,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | b
 
 # Install powerline fonts, beauty at its best!
 git clone https://github.com/powerline/fonts powerline-fonts
-cd powerline-fonts 
+cd powerline-fonts
 ./install.sh
+cd .. && rm -r powerline-fonts
