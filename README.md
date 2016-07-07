@@ -3,7 +3,7 @@
 ![Love-it](https://media0.giphy.com/media/GHBjTqSrtz6Fy/200.gif)
 
 Coup is a script to setup your linux (ubuntu based) machine.
-Made this because I'm too lazy to setup some of my ubuntu base OSes.
+Made this because I'm too lazy to setup some of my ubuntu based OSes.
 
 # Usage
 
