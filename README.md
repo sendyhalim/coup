@@ -5,26 +5,14 @@
 Coup is a script to setup your linux (ubuntu based) machine.
 Made this because I'm too lazy to setup some of my ubuntu based OSes.
 
-# Usage
-
-Clone it
+## Install
 
 ```
-git clone https://github.com/sendyhalim/coup && cd coup
+curl --remote-name https://raw.githubusercontent.com/sendyhalim/coup/master/install
+sh install
 ```
 
-Bootstrap
-
-```
-./bootstrap.sh
-```
-
-Install :tada:
-```
-./install.sh
-```
-
-# Stuffs that this script setup
+## Stuffs that this script setup
 
 - Install zsh + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - Vim
@@ -35,6 +23,6 @@ Install :tada:
 - [NVM](https://github.com/creationix/nvm)
 - [Powerline fonts](https://github.com/powerline/fonts)
 
-# License
+## License
 
 MIT ~

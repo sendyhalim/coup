@@ -1,29 +1,38 @@
-# This script assumes that you're running zsh
+#!/bin/sh
+#
+sudo apt-get install build-essential git curl python-setuptools python-dev ruby vim emacs zsh tmux
 
-REPO_DIR=$HOME/repositories
+# Good ol' terminal-style vim doesn't have access to the clipboard,
+# which is a part of the X windows system. Installing vim-gtk gives vim
+# the access that it needs to modify and view the clipboard.
+sudo apt-get install vim-gtk
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Create .customrc which will be used for local customization
-touch $HOME/.customrc
+touch "$HOME/.customrc"
 
 # Clone dotfiles~
-mkdir -p $REPO_DIR
-cd $REPO_DIR
+REPO_DIR=$HOME/repositories
+mkdir -p "$REPO_DIR"
+cd "$REPO_DIR"
 git clone https://github.com/sendyhalim/dotfiles
 cd dotfiles
 rm ~/.zshrc
 ./create_ln.sh
 
 # Clone vimrc
-cd $REPO_DIR
+cd "$REPO_DIR"
 git clone https://github.com/sendyhalim/vimrc
 cd vimrc
 ./create_ln.sh
 
 # Install spacemacs
-git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d
+git clone https://github.com/syl20bnr/spacemacs "$HOME/.emacs.d"
 
 # Install vim vundle
-git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git "$HOME/.vim/bundle/Vundle.vim"
 
 # Install linuxbrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
