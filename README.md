@@ -28,11 +28,13 @@ REPO_DIR=<path-to-repo-dir> sh install
 - Linux brew
 - [NVM](https://github.com/creationix/nvm)
 - [Powerline fonts](https://github.com/powerline/fonts)
+- [Shortcuts](Documentation/Shortcuts.md)
 - [Spacemacs](https://github.com/syl20bnr/spacemacs)
 - Terminator
 - Tmux
 - Vim
 - Zsh + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+
 
 ## License
 
