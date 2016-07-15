@@ -56,7 +56,5 @@ cd .. && rm -r powerline-fonts
 
 # Setup hotkeys
 # -------------------------------------------
-echo "Setting up hotkeys ..."
-. ./hotkeys
+. ./shortcuts
 . ./aliases
-

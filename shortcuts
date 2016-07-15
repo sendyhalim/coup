@@ -1,5 +1,7 @@
 #!/bin/sh
 
+printf "Setting up hotkeys ...\n"
+
 # Setup hotkeys for media keys
 # Documentation at `Documentation/Shortcuts.md`
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "<Super>equal"
@@ -8,4 +10,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys stop "<Super>Backspac
 gsettings set org.gnome.settings-daemon.plugins.media-keys play "<Super>Return"
 gsettings set org.gnome.settings-daemon.plugins.media-keys previous "<Super>comma"
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "<Super>period"
+
+printf "Done, check the documentation at  https://github.com/sendyhalim/coup/blob/master/Documentation/Shortcuts.md\n"
 
