@@ -23,6 +23,7 @@ REPO_DIR=<path-to-repo-dir> sh install
 
 ## Stuffs that this script setup
 
+- [Aliases](Documentation/Aliases.md)
 - [Dotfiles](https://github.com/sendyhalim/dotfiles)
 - Emacs
 - Linux brew
@@ -33,6 +34,7 @@ REPO_DIR=<path-to-repo-dir> sh install
 - Terminator
 - Tmux
 - Vim
+- Xclip
 - Zsh + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 
