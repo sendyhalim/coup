@@ -11,5 +11,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys play "<Super>Return"
 gsettings set org.gnome.settings-daemon.plugins.media-keys previous "<Super>comma"
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "<Super>period"
 
+dconf write /org/compiz/profiles/unity/plugins/unityshell/show-launcher '"<Alt>space"'
+
 printf "Done, check the documentation at  https://github.com/sendyhalim/coup/blob/master/Documentation/Shortcuts.md\n"
 

@@ -9,3 +9,10 @@
 | `Super + Backspace` | Stop music         |
 | `Super + Return`    | Play music         |
 
+
+## Unity
+
+| Shortcut            | Description         |
+| ------------------- | ------------------- |
+| `Alt + Space`       | Show unity launcher |
+
