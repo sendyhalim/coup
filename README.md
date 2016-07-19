@@ -9,8 +9,8 @@ Because it's tedious to setup ubuntu based linux machines.
 ## Install
 
 ```
-curl --remote-name https://raw.githubusercontent.com/sendyhalim/coup/master/install
-sh install
+git clone https://github.com/sendyhalim/coup
+cd coup && sh install
 ```
 
 By default it will clone repositories in `$HOME/repositories`, if you want to
