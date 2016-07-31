@@ -5,6 +5,7 @@ printf "Setting up aliases ...\n"
 echo "
 alias pbpaste=\"xclip -out -sel clip\"
 alias pbcopy=\"xclip -in -sel clip\"
+alias open=\"nautilus\"
 " >> "$HOME/.customrc"
 
 printf "Done, check the documentation at  https://github.com/sendyhalim/coup/blob/master/Documentation/Aliases.md\n"
