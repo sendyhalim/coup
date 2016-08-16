@@ -23,6 +23,7 @@ REPO_DIR=<path-to-repo-dir> sh install
 
 ## Stuffs that this script setup
 
+- [Ag Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 - [Aliases](Documentation/Aliases.md)
 - [Dotfiles](https://github.com/sendyhalim/dotfiles)
 - Emacs
