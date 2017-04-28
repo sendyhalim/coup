@@ -4,7 +4,7 @@ sudo apt-get install \
   build-essential git curl python-setuptools python-dev \
   ruby vim emacs zsh tmux terminator xclip \
   compizconfig-settings-manager compiz-plugins-extra bison silversearcher-ag \
-  htop
+  htop exfat-utils exfat-fuse
 
 # Good ol' terminal-style vim doesn't have access to the clipboard,
 # which is a part of the X windows system. Installing vim-gtk gives vim
